@@ -1,0 +1,59 @@
+.feature-box {
+   // background-color: rgba($color-primary-light1,.8);
+   background-image: linear-gradient(to Bottom right, $color-tertiary-light,$color-tertiary-dark);
+    color: #CCC;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, .15);
+    transition: transform .3s;
+
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+   
+    /*&__icon{
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        display:inline-block;
+        background-image: linear-gradient(to right, $color-secondary, $color-tertiary-light);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
+    }*/
+
+/////////////////////////////////////////
+//GAMING Card
+    &__keyboard{
+        height: 3.25rem;
+        width: 3.25rem;
+    }
+/////////////////////////////////////////
+//REPAIR Card
+    &__repair{
+    height: 3.25rem;
+    width: 3.25rem;
+    }
+/////////////////////////////////////////
+//PRINTING Card
+    &__printer{
+    height: 3.25rem;
+    width: 3.25rem;
+    }
+/////////////////////////////////////////
+//WEBDEV Card
+    &__webDev{
+    height: 3.25rem;
+    width: 3.25rem;
+    }
+
+    &:hover{
+        transform: translateY(-1rem) scale(1.03);
+    }
+
+   
+}

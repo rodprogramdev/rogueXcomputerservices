@@ -1,0 +1,201 @@
+
+.header {
+    height: 100vh;
+    position: fixed;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-dark,0.8),
+        rgba($color-tertiary-light,0.1)), 
+        url(../image/florian-olivo-1166453-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    position: relative;
+    color: $color-primary-light;
+
+
+    &__logo-box {
+        position: absolute;
+        top: 5rem;
+        left:4rem;
+       /* background-color: red;*/
+    }
+    
+    &__logo {
+        height: 6vw;
+    }
+
+    &__nav {
+        padding: 2rem;
+        margin: 3rem;
+        background-color: $color-secondary;
+        height: 5rem;
+        border-radius: 1rem;
+     }
+    
+
+    &__navigation--link {
+        list-style: none;
+        float: right;
+        & li:first-child{
+            margin: 0;
+        }
+
+        & li{
+            display: inline-block;
+            margin-left: 3rem;
+        }
+        &--link {
+            background-color: $color-tertiary-dark;
+             border-radius: 0.6rem;
+                
+            &:hover {
+                background-color:  $color-tertiary-light;
+                border-radius: 0.6rem;
+            }
+                
+        }
+       
+    }
+        
+
+}
+
+
+
+.header__text-box {
+    position: absolute;
+    top: -4%;
+    left: 7%;
+    /*background-color: blue;*/
+    font-size: 2rem;
+}
+
+   
+.header__text-box-heading-secondary {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*background-color: blue;*/
+    text-align: center;
+    
+
+    @include respond(phone) {
+        top: 40%;
+        
+    }
+}
+.header-input {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 70%;
+    left: 46%;
+    transform: translate(-50%,-50%);
+    /*background-color: blue;*/
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    //border-radius: 100px;
+    padding: 1rem 1rem;
+    margin-right: 0;
+    //width: 40%;
+    transition: all .2s;
+    margin-right: -3.5rem;
+   
+    & > * {
+        padding: 0 1rem;
+    }
+
+    &__search--box{
+        //padding: 0.5;
+       width:90%;
+        
+       border-radius: 100px;
+       padding: 0.3rem 1rem;
+
+       &:focus {
+        outline: none;
+        width: 95%;
+        }
+    }
+
+    &__btn {
+        padding: 0;
+        }
+    
+
+    //background-color: #f4f2f2; 
+   
+    
+    //PHONE media querry
+    @include respond(phone) {
+        top: 50%;
+        
+    }
+}
+
+
+        /* 
+        &--link{
+            background-color:  $color-tertiary-dark;
+                border-radius: 0.6rem;
+        }
+
+        &--link{
+            background-color:  $color-tertiary-dark;
+                border-radius: 0.6rem;
+        }*/
+        /*
+        
+        */
+        /*
+        */
+        
+        /*
+        &__navigation li a:link{
+            text-decoration: none;
+            text-transform: uppercase;
+            color:$color-primary-light;
+            padding: 1rem;
+            text-align: center;
+           
+           
+        }*/
+       
+    
+    /*
+    &__navigation__product--link:hover{
+        background-color: $color-tertiary-light;
+            border-radius: 0.6rem;
+    }
+    
+    &__navigation__contact--link:hover{
+        background-color: $color-tertiary-light;
+            border-radius: 0.6rem;
+    }*/
+
+/* .nav-container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+ }*/
+
+ /*
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}*/
+
+#particles-js{
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+    //z-index: 1;
+} 

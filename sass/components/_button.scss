@@ -1,0 +1,103 @@
+
+
+
+.btn:link, 
+.btn:visited {
+    text-transform: Uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem; 
+    display: inline-block;
+    /*link pseudo class is a state of a selector*/
+    border-radius: 10rem;/*0.6rem;*/
+    transition: all .3s;
+    position: relative;
+    font-size: 1.1rem;  
+
+
+    border: none; 
+    cursor: pointer;
+    }
+    
+    .btn:hover{
+      transform: translateY(-0.3rem);
+      box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.452);
+    }
+  
+  
+  
+  
+ .btn:active{
+      transform: translateY(-0.1rem);
+  }
+
+  .btn--blue{
+      background-color: $color-tertiary-dark;
+      color:$color-primary-light;
+      
+  }
+
+  .btn--green{
+    background-color:$color-tertiary-dark;
+    color:$color-primary-light;
+    
+    }
+
+  
+  .btn::after{
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 1rem;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: -1;
+      transition: all .4s;
+      
+  } /*after pseudo element is considered as a child of the main element.*/
+  
+  //.btn--blue::after{
+  //    background-color:  $color-tertiary-dark;
+      
+  //}
+  
+  .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+  
+  .btn--animated {
+      animation: MoveFromBottom .5s ease-out .75s;
+      animation-fill-mode: backwards;
+  }
+  
+  .btn-text {
+      &:link,
+      &:visited{
+            color: $color-tertiary-light;
+            display: inline-block;
+            text-decoration:none;
+            border-bottom: 1px solid $color-tertiary-light;
+            padding: 3px;
+            font-size: $default-font-size;
+            transition: all .2s;
+            border-radius: 2px;
+    }
+
+      &:hover {
+        background-color: $color-tertiary-light;
+        color:$color-grey-light-1;
+        box-shadow: 0 1rem 2rem rgba($color-primary-dark, .15);
+        transform: translateY(-1rem);
+    }
+
+      &:active{
+        box-shadow: 0 .5rem 2rem rgba($color-primary-dark, .15);
+        transform: translateY(0)
+
+      }
+    }
+
+    
+
