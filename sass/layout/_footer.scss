@@ -90,36 +90,20 @@
     }
 }
 */
-.footer{
-    font-size: 1.4rem;
+
+
+.footer {
+    background-color:$color-primary-light;
+    padding: 10rem 0;
+    font-size: 3rem;
     color:$color-white;
-    background-color: black;
-    height: 100vh;
+
     @include respond(tab-port) {
         padding: 8rem 0;
-    }
-
-    &__logo-box {
-        text-align: center;
-        margin-bottom: 8rem;
-        position: relative;
-        border-radius: 50%;
-
-        top:40%; 
-        left:50%;
-        transform:translate(-50%,-50%);
-        width:20%;
-        height: 50% ;
-        background-color:$color-primary-dark;
-        @include respond(tab-port) {
-            margin-bottom: 4rem;
-        }
-    }
-
-    &__logo{
-        width: 20rem;
-        height: auto;
-        background-color: $color-dark-gray1;
-    }
-
+    }    
 }
+
+.footer__ul{
+    background-color: orangered;
+}
+
